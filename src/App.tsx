@@ -1,17 +1,12 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import axios from "axios";
 import {
   BrowserRouter as Router,
   Route,
   Switch,
   Redirect,
 } from 'react-router-dom';
-
-axios.get('http://localhost:5000/users/index.json')
-    .then(data=>console.log(data))
-    .catch(e=>console.log(e));
 
 function App() {
   return (
